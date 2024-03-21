@@ -54,7 +54,7 @@
 						<div class="catalog-sidebar-checkbox">
 							<div class="checkbox-wrapper">
 								<span class="checkbox">
-									<input type="checkbox" />
+									<input type="checkbox" value="64" class="checkbox-storage" />
 									<svg>
 										<use xlink:href="#checkbox" class="checkbox"></use>
 									</svg>
@@ -74,7 +74,7 @@
 						<div class="catalog-sidebar-checkbox">
 							<div class="checkbox-wrapper">
 								<span class="checkbox">
-									<input type="checkbox" />
+									<input type="checkbox" value="128" class="checkbox-storage" />
 									<svg>
 										<use xlink:href="#checkbox" class="checkbox"></use>
 									</svg>
@@ -94,7 +94,7 @@
 						<div class="catalog-sidebar-checkbox">
 							<div class="checkbox-wrapper">
 								<span class="checkbox">
-									<input type="checkbox" />
+									<input type="checkbox" value="256" class="checkbox-storage" />
 									<svg>
 										<use xlink:href="#checkbox" class="checkbox"></use>
 									</svg>
@@ -114,7 +114,7 @@
 						<div class="catalog-sidebar-checkbox">
 							<div class="checkbox-wrapper">
 								<span class="checkbox">
-									<input type="checkbox" />
+									<input type="checkbox" value="512" class="checkbox-storage" />
 									<svg>
 										<use xlink:href="#checkbox" class="checkbox"></use>
 									</svg>
@@ -137,7 +137,7 @@
 						<div class="catalog-sidebar-checkbox">
 							<div class="checkbox-wrapper">
 								<span class="checkbox">
-									<input type="checkbox" />
+									<input type="checkbox" value="Белый" class="checkbox-color" />
 									<svg>
 										<use xlink:href="#checkbox" class="checkbox"></use>
 									</svg>
@@ -157,7 +157,7 @@
 						<div class="catalog-sidebar-checkbox">
 							<div class="checkbox-wrapper">
 								<span class="checkbox">
-									<input type="checkbox" />
+									<input type="checkbox" value="Синий" class="checkbox-color" />
 									<svg>
 										<use xlink:href="#checkbox" class="checkbox"></use>
 									</svg>
@@ -177,7 +177,11 @@
 						<div class="catalog-sidebar-checkbox">
 							<div class="checkbox-wrapper">
 								<span class="checkbox">
-									<input type="checkbox" />
+									<input
+										type="checkbox"
+										value="Натуральный титан"
+										class="checkbox-color"
+									/>
 									<svg>
 										<use xlink:href="#checkbox" class="checkbox"></use>
 									</svg>
@@ -197,7 +201,11 @@
 						<div class="catalog-sidebar-checkbox">
 							<div class="checkbox-wrapper">
 								<span class="checkbox">
-									<input type="checkbox" />
+									<input
+										type="checkbox"
+										value="Черный"
+										class="checkbox-color"
+									/>
 									<svg>
 										<use xlink:href="#checkbox" class="checkbox"></use>
 									</svg>
@@ -217,7 +225,11 @@
 						<div class="catalog-sidebar-checkbox">
 							<div class="checkbox-wrapper">
 								<span class="checkbox">
-									<input type="checkbox" />
+									<input
+										type="checkbox"
+										value="Золотой"
+										class="checkbox-color"
+									/>
 									<svg>
 										<use xlink:href="#checkbox" class="checkbox"></use>
 									</svg>
@@ -242,7 +254,7 @@
 				<div class="catalog-right">
 					<div class="catalog-sort">
 						<span class="catalog-sort-title">Сортировать по:</span>
-						<div class="catalog-sort-type selected">
+						<div class="catalog-sort-type selected" id="popular" name="popular">
 							Популярности
 							<img
 								src="images/icons/arrow.svg"
@@ -250,7 +262,7 @@
 								class="catalog-sort-arrow"
 							/>
 						</div>
-						<div class="catalog-sort-type">
+						<div class="catalog-sort-type" id="price">
 							Стоимости
 							<img
 								src="images/icons/arrow.svg"
@@ -258,7 +270,7 @@
 								class="catalog-sort-arrow"
 							/>
 						</div>
-						<div class="catalog-sort-type">
+						<div class="catalog-sort-type" id="rating">
 							Рейтингу
 							<img
 								src="images/icons/arrow.svg"
@@ -268,78 +280,6 @@
 						</div>
 					</div>
 					<div class="catalog-items">
-						<div class="catalog-item">
-							<img
-								src="./images/catalog/iphones/iphone15promax-titan.png"
-								alt="фото товара"
-								class="catalog-item-img"
-							/><span class="catalog-item-name">Iphone 15 pro max 256gb</span
-							><span class="catalog-item-price">115 990</span
-							><button class="catalog-item-btn button-blue">Заказать</button>
-						</div>
-						<div class="catalog-item">
-							<img
-								src="./images/catalog/iphones/iphone15promax-titan.png"
-								alt="фото товара"
-								class="catalog-item-img"
-							/><span class="catalog-item-name">Iphone 15 pro max 256gb</span
-							><span class="catalog-item-price">115 990</span
-							><button class="catalog-item-btn button-blue">Заказать</button>
-						</div>
-						<div class="catalog-item">
-							<img
-								src="./images/catalog/iphones/iphone15promax-titan.png"
-								alt="фото товара"
-								class="catalog-item-img"
-							/><span class="catalog-item-name">Iphone 15 pro max 256gb</span
-							><span class="catalog-item-price">115 990</span
-							><button class="catalog-item-btn button-blue">Заказать</button>
-						</div>
-						<div class="catalog-item">
-							<img
-								src="./images/catalog/iphones/iphone15promax-titan.png"
-								alt="фото товара"
-								class="catalog-item-img"
-							/><span class="catalog-item-name">Iphone 15 pro max 256gb</span
-							><span class="catalog-item-price">115 990</span
-							><button class="catalog-item-btn button-blue">Заказать</button>
-						</div>
-						<div class="catalog-item">
-							<img
-								src="./images/catalog/iphones/iphone15promax-titan.png"
-								alt="фото товара"
-								class="catalog-item-img"
-							/><span class="catalog-item-name">Iphone 15 pro max 256gb</span
-							><span class="catalog-item-price">115 990</span
-							><button class="catalog-item-btn button-blue">Заказать</button>
-						</div>
-						<div class="catalog-item">
-							<img
-								src="./images/catalog/iphones/iphone15promax-titan.png"
-								alt="фото товара"
-								class="catalog-item-img"
-							/><span class="catalog-item-name">Iphone 15 pro max 256gb</span
-							><span class="catalog-item-price">115 990</span
-							><button class="catalog-item-btn button-blue">Заказать</button>
-						</div>
-						<div class="catalog-item">
-							<img
-								src="./images/catalog/iphones/iphone15promax-titan.png"
-								alt="фото товара"
-								class="catalog-item-img"
-							/><span class="catalog-item-name">Iphone 15 pro max 256gb</span
-							><span class="catalog-item-price">115 990</span
-							><button class="catalog-item-btn button-blue">Заказать</button>
-						</div>
-						<div class="catalog-item">
-							<img
-								src="./images/catalog/iphones/iphone15promax-titan.png"
-								alt="фото товара"
-								class="catalog-item-img"
-							/><span class="catalog-item-name">Iphone 15 pro max 256gb</span
-							><span class="catalog-item-price">115 990</span
-							><button class="catalog-item-btn button-blue">Заказать</button>
-						</div>
 						<div class="catalog-item">
 							<img
 								src="./images/catalog/iphones/iphone15promax-titan.png"
@@ -393,5 +333,6 @@
 				</div>
 			</div>
 		</footer>
+		<script src="scripts/products.js"></script>
 	</body>
 </html>
