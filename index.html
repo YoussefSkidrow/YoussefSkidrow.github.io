@@ -14,6 +14,11 @@
 			type="text/javascript"
 			src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
 		></script>
+		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+		/>
 		<script type="text/javascript">
 			;(function () {
 				emailjs.init({
@@ -21,40 +26,61 @@
 				})
 			})()
 		</script>
+		<script type="text/javascript">
+			document.addEventListener('DOMContentLoaded', function () {
+				var bElements = document.querySelectorAll('.b')
+				bElements.forEach(function (element) {
+					element.addEventListener('click', function () {
+						this.classList.toggle('b')
+						this.classList.toggle('b-selected')
+					})
+				})
+
+				var elem = document.querySelector('.carousel-mobile')
+
+				var flkty = new Flickity(elem, {
+					// options
+					cellalign: 'right',
+					pageDots: false,
+					groupCells: '20%',
+					selectedAttraction: 0.03,
+					friction: 0.15,
+				})
+			})
+		</script>
 		<script src="scripts/email.js"></script>
 	</head>
 	<body>
 		<nav class="navbar">
 			<div class="navbar-container">
 				<div class="navbar-links">
-					<a class="navbar-link" href="index.html">
+					<a class="navbar-link1" href="index.html">
 						<img src="images/icons/logo.png" alt="logo" class="navbar-logo" />
 					</a>
 					<div class="navbar-delimiter"></div>
 					<a class="navbar-link" href="index.html">Главная</a>
-					<a class="navbar-link" href="catalog.html">Каталог</a>
+					<a class="navbar-link" href="catalog.html?items=iphones">Каталог</a>
 					<a class="navbar-link" href="delivery.html">Доставка</a>
 				</div>
 				<div class="navbar-contacts">
+					<div class="hamburger">
+						<span class="hamburger-bar"></span>
+						<span class="hamburger-bar"></span>
+						<span class="hamburger-bar"></span>
+					</div>
 					<a class="navbar-link" href="tel:+79999999999">+7 (999) 999-99-99</a>
 					<span class="navbar-time">С 9:00 до 21:00</span>
 				</div>
 			</div>
-		</nav>
-		<!-- <div class="subnavbar">
-			<div class="subnavbar-links">
-				<a class="subnavbar-link" href="catalog.html?items=iphones">Iphone</a>
-				<a class="subnavbar-link" href="catalog.html?items=ipads">Ipad</a>
-				<a class="subnavbar-link" href="catalog.html?items=macbooks">Macbook</a>
-				<a class="subnavbar-link" href="catalog.html?items=applewatches"
-					>Apple Watch</a
+			<div class="navbar-mobile">
+				<a class="navbar-mobile-link" href="index.html">Главная</a>
+				<a class="navbar-mobile-link" href="catalog.html?items=iphones"
+					>Каталог</a
 				>
-				<a class="subnavbar-link" href="catalog.html?items=accessories"
-					>Акссесуары</a
-				>
+				<a class="navbar-mobile-link" href="delivery.html">Доставка</a>
 			</div>
-		</div> -->
-		<section class="start">
+		</nav>
+		<section class="start" id="start">
 			<div class="start-container">
 				<div id="carousel-wrapper">
 					<div id="menu">
@@ -80,7 +106,7 @@
 				<img src="images/icons/arrow.svg" alt="вниз" class="start-arrow-down" />
 			</a>
 		</section>
-		<section class="aboutus section">
+		<section class="aboutus section" id="aboutus">
 			<div class="container">
 				<h2 class="title">О нас</h2>
 				<div class="subcontainer">
@@ -90,19 +116,13 @@
 						<span class="bold">Iphone Store</span> специализируется на продаже и
 						обслуживании техники Apple в Ростове-на-Дону. У нас всегда в наличии
 						полный модельный ряд iPhone.
-						<br />
+						<br class="aboutus-br" />
 						Apple – неоспоримый фаворит в сфере производства мобильной и
 						компьютерной техники. Компания ежегодно задает тренды, которые
 						расходятся по всей планете. iPhone считается символом поколения:
 						эргономичный дизайн, прочный корпус, передовые камеры, быстрый
 						процессор, а также высокий уровень сервисного обслуживания.
 						<br />
-						Надёжный и актуальный iPhone делает жизнь проще. Например, функции
-						универсального доступа позволяют людям настраивать смартфон под
-						личные нужды, а голосовой ассистент «Siri» поможет в поиске ответов
-						на возникающие вопросы. Новые полезные приложения обеспечивают
-						комфортное использование телефона в жизни. Apple долгое время
-						является абсолютным лидером в мире смартфонов.
 						<span class="bold">Главные причины</span>, по которым люди выбирают
 						Айфон:
 						<br />
@@ -121,7 +141,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="catalog section">
+		<section class="catalog section" id="catalog">
 			<h2 class="title">У нас лучшие цены на все позиции</h2>
 			<div class="catalog-items">
 				<a class="catalog-item" href="catalog.html?items=iphones">
@@ -231,23 +251,12 @@
 							alt="иконка"
 							class="advantages-img"
 						/>
-						<span class="advantages-text-2">Выгодный Trade-in</span>
+						<span class="advantages-text-2"
+							>Выгодный <br />
+							Trade-in</span
+						>
 					</li>
 				</ul>
-				<p class="advantages-text">
-					Мы ценим доверие, которое вы оказываете, и гарантируем безупречное
-					качество продукции. Помимо широкого выбора iPhone предлагаем
-					разнообразные аксессуары, которые помогут вам получить максимум
-					удовольствия от использования вашего устройства. Наши аксессуары
-					соответствуют самым высоким стандартам качества и надежности. Мы
-					заботимся о вашем комфорте и стремимся сделать покупку iPhone
-					максимально приятной и выгодной. Мы нацелены на долгосрочные отношения
-					с нашими покупателями и готовы предложить вам лучшие условия
-					обслуживания. Не упустите возможность приобрести качественный iPhone и
-					получить приятные бонусы от нашего интернет-магазина. При покупке
-					более двух товаров вы можете получить в подарок чехол, зарядное
-					устройство или другие аксессуары.
-				</p>
 			</div>
 		</section>
 		<section class="section popular" id="popular">
@@ -255,8 +264,6 @@
 				<h2 class="title">Популярные модели</h2>
 				<div class="carousel">
 					<div class="carousel__body">
-						<!-- <div class="carousel__prev"><i class="far fa-angle-left"></i></div>
-						<div class="carousel__next"><i class="far fa-angle-right"></i></div> -->
 						<div class="carousel__slider">
 							<div class="carousel__slider__item">
 								<div class="item__3d-frame">
@@ -471,9 +478,47 @@
 						</div>
 					</div>
 				</div>
+				<div class="carousel-mobile">
+					<div class="carousel-mobile-cell">
+						<img src="./images/categories/accessories.png" class="p" />
+						<p class="n">Eddie Kinsella</p>
+						<p class="b">Call</p>
+						<p class="content"></p>
+					</div>
+					<div class="carousel-mobile-cell">
+						<img src="./images/categories/accessories.png" class="p" />
+						<p class="n">Harrison Benac</p>
+						<p class="b">Call</p>
+					</div>
+					<div class="carousel-mobile-cell">
+						<img src="./images/categories/accessories.png" class="p" />
+						<p class="n">Sean Kingston</p>
+						<p class="b">Call</p>
+					</div>
+					<div class="carousel-mobile-cell">
+						<img src="./images/categories/accessories.png" class="p" />
+						<p class="n">Hayden Kaupu</p>
+						<p class="b">Call</p>
+					</div>
+					<div class="carousel-mobile-cell">
+						<img src="./images/categories/accessories.png" class="p" />
+						<p class="n">Franklin Tudor</p>
+						<p class="b">Call</p>
+					</div>
+					<div class="carousel-mobile-cell">
+						<img src="./images/categories/accessories.png" class="p" />
+						<p class="n">Herbert Simpson</p>
+						<p class="b">Call</p>
+					</div>
+					<div class="carousel-mobile-cell">
+						<img src="./images/categories/accessories.png" class="p" />
+						<p class="n">Shaun Coleman</p>
+						<p class="b">Call</p>
+					</div>
+				</div>
 			</div>
 		</section>
-		<section class="faq section">
+		<section class="faq section" id="faq">
 			<div class="container">
 				<h2 class="title">Частые вопросы</h2>
 				<div class="container2 mx-auto">
@@ -598,18 +643,40 @@
 				</div>
 			</div>
 		</section>
-		<section class="recall section">
+		<section class="recall section" id="recall">
+			<h2 class="title">Оставьте свой отзыв</h2>
 			<div class="container">
 				<form id="recall-form">
 					<input type="hidden" name="contact_number" />
-					<label>Name</label>
+					<label>Имя</label>
 					<input type="text" name="name" />
-					<label>Email</label>
+					<label>Почта</label>
 					<input type="email" name="email" />
-					<label>Message</label>
+					<label>Сообщение</label>
 					<textarea name="message"></textarea>
-					<input type="submit" value="Send" />
+					<input type="submit" value="Отправить" />
 				</form>
+				<div style="position: relative; overflow: hidden">
+					<a
+						href="https://yandex.ru/maps/org/apple_rostov/1256836912/?utm_medium=mapframe&utm_source=maps"
+						style="color: #eee; font-size: 12px; position: absolute; top: 0px"
+						>Apple Rostov</a
+					><a
+						href="https://yandex.ru/maps/39/rostov-na-donu/category/electronics_store/184107835/?utm_medium=mapframe&utm_source=maps"
+						style="color: #eee; font-size: 12px; position: absolute; top: 14px"
+						>Магазин электроники в Ростове‑на‑Дону</a
+					><a
+						href="https://yandex.ru/maps/39/rostov-na-donu/category/phone_repair/184107787/?utm_medium=mapframe&utm_source=maps"
+						style="color: #eee; font-size: 12px; position: absolute; top: 28px"
+						>Ремонт телефонов в Ростове‑на‑Дону</a
+					><iframe
+						class="yamap"
+						src="https://yandex.ru/map-widget/v1/?ll=39.756827%2C47.238121&mode=search&oid=1256836912&ol=biz&sll=39.723507%2C47.225578&sspn=0.111322%2C0.049290&text=iphone%20store&z=14"
+						frameborder="1"
+						allowfullscreen="true"
+						style="position: relative"
+					></iframe>
+				</div>
 			</div>
 		</section>
 		<footer class="footer" id="footer">
@@ -617,11 +684,9 @@
 				<div class="footer-list">
 					<div class="footer-item">
 						<span class="footer-title">О компании</span>
-						<a class="footer-link" href="catalog.html?items=iphones">О нас</a>
-						<a class="footer-link" href="catalog.html?items=macbooks"
-							>Контакты</a
-						>
-						<a class="footer-link" href="catalog.html?items=ipads">Отзывы</a>
+						<a class="footer-link" href="index.html#aboutus">О нас</a>
+						<a class="footer-link" href="index.html#recall">Контакты</a>
+						<a class="footer-link" href="index.html#reviews">Отзывы</a>
 					</div>
 					<div class="footer-item">
 						<span class="footer-title">Каталог</span>
@@ -637,13 +702,9 @@
 					</div>
 					<div class="footer-item">
 						<span class="footer-title">Помощь</span>
-						<a class="footer-link" href="catalog.html?items=iphones">Ремонт</a>
-						<a class="footer-link" href="catalog.html?items=macbooks"
-							>Гарантия</a
-						>
-						<a class="footer-link" href="catalog.html?items=ipads"
-							>Частые вопросы</a
-						>
+						<a class="footer-link" href="repair.html">Ремонт</a>
+						<a class="footer-link" href="warranty.html">Гарантия</a>
+						<a class="footer-link" href="index.html#faq">Частые вопросы</a>
 					</div>
 				</div>
 				<div class="footer-delimiter"></div>
@@ -661,5 +722,7 @@
 		<script src="scripts/carousel.js"></script>
 		<script src="scripts/slider.js"></script>
 		<script src="scripts/faq.js"></script>
+		<script src="scripts/burger.js"></script>
+		<script src="scripts/index.js"></script>
 	</body>
 </html>
