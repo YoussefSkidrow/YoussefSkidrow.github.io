@@ -3,9 +3,9 @@ window.onload = function () {
     event.preventDefault();
     emailjs.sendForm('service_0y78fmq', 'template_cnyz73s', this)
       .then(() => {
-        console.log('SUCCESS!');
+        alert('Успешно!');
       }, (error) => {
-        console.log('FAILED...', error);
+        alert('Произошла ошибка');
       });
     emailjs.sendForm('service_0y78fmq', 'template_jcts0on', this)
       .then(() => {

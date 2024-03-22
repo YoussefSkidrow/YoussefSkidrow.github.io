@@ -1,0 +1,91 @@
+:root {
+	--white: #fff;
+	--black: #000;
+	--gray-light: #f9f9f9;
+	--gray-dark: #808080;
+	--dark: #3f3f3f;
+	--pink-light: #f6efe5;
+	--green-light: #19a35e;
+}
+
+.container2 {
+	margin: 0 auto;
+}
+
+.mx-auto {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.h2 {
+	font-size: 2rem;
+}
+
+.accordions {
+	max-width: 100%;
+	margin: auto;
+}
+
+.accordion .accordion__title {
+	display: block;
+	font-size: 1.1rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	background-color: var(--white);
+	border-bottom: 1px solid #0002;
+	padding: 20px 10px;
+	color: var(--dark);
+	margin-top: 10px;
+	transition: all 0.25s ease;
+	cursor: pointer;
+}
+
+.accordion .accordion__title input {
+	appearance: none;
+}
+
+.accordion .accordion__title:after {
+	transition: all 0.25s ease;
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+	content: '\f0da';
+	float: right;
+	margin-right: 10px;
+}
+
+.accordion .accordion__title:has(input:checked):after {
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+	content: '\f0d7';
+	float: right;
+	margin-right: 10px;
+}
+
+.accordion .accordion__text {
+	overflow: hidden;
+	max-height: 0;
+	background-color: var(--gray-light);
+	filter: contrast(0.9);
+	transition: all 0.5s ease-in-out;
+	font-weight: 500;
+}
+
+.accordion .accordion__text p {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.5rem;
+	padding: 10px 10px;
+	color: $black;
+}
+
+.accordion .accordion__title:has(input:checked) {
+	color: var(--green-light);
+}
+
+.accordion .accordion__title:has(input:checked) + .accordion__text {
+	max-height: 200px;
+}

@@ -1,0 +1,152 @@
+.navbar {
+	position: fixed;
+	z-index: 102;
+	top: 0;
+	width: 100%;
+	background-color: $black;
+	color: $white;
+
+	&-container {
+		margin: 0 auto;
+		width: clamp(250px, 100%, 1200px);
+		display: flex;
+		padding: 10px;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&-links {
+		display: flex;
+		gap: 12px;
+		align-items: center;
+	}
+
+	&-link {
+		transition: all 0.35s;
+		&:hover {
+			color: $white-hover;
+		}
+	}
+
+	&-delimiter {
+		width: 1px;
+		height: 40px;
+		background-color: $white-hover;
+	}
+
+	&-logo {
+		width: 34px;
+	}
+
+	&-contacts {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+		font-size: 14px;
+	}
+
+	&-time {
+		color: $white-hover;
+	}
+
+	&-mobile {
+		display: none;
+	}
+
+	@media only screen and (max-width: 768px) {
+		&-mobile {
+			display: flex;
+			position: fixed;
+			z-index: 103;
+			left: -100%;
+			top: 64px;
+			flex-direction: column;
+			background-color: $white;
+			width: 100%;
+			text-align: center;
+			transition: 0.3s;
+			box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+		}
+
+		&-delimiter {
+			display: none;
+		}
+
+		&-mobile.active {
+			left: 0;
+		}
+
+		&-mobile-link {
+			color: $black;
+			font-size: 20px;
+			&:visited {
+				color: $black;
+			}
+			padding: 10px;
+		}
+
+		&-link {
+			display: none;
+		}
+
+		&-time {
+			display: none;
+		}
+	}
+}
+
+.subnavbar {
+	position: fixed;
+	z-index: 102;
+	top: 66px;
+	width: 100%;
+	display: flex;
+	padding: 15px 60px;
+	align-items: center;
+	justify-content: center;
+	background-color: $gray;
+	color: $white;
+
+	&-links {
+		display: flex;
+		align-items: center;
+		gap: 55px;
+	}
+
+	&-link {
+		transition: all 0.35s;
+		&:hover {
+			color: $white-hover;
+		}
+	}
+}
+
+.hamburger {
+	display: none;
+
+	&-bar {
+		display: block;
+		width: 25px;
+		height: 3px;
+		margin: 5px auto;
+		-webkit-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+		background-color: $white-hover;
+	}
+
+	@media only screen and (max-width: 768px) {
+		display: block;
+		cursor: pointer;
+		&.active &-bar:nth-child(2) {
+			opacity: 0;
+		}
+
+		&.active &-bar:nth-child(1) {
+			transform: translateY(8px) rotate(45deg);
+		}
+
+		&.active &-bar:nth-child(3) {
+			transform: translateY(-8px) rotate(-45deg);
+		}
+	}
+}

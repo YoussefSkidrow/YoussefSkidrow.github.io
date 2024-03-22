@@ -75,3 +75,7 @@ optionPrevious.onclick = function () {
     carousel.classList.remove("anim-previous");
   }, 650);
 };
+
+setInterval(() => {
+  optionNext.click();
+}, 5000);

@@ -26,29 +26,32 @@
 				})
 			})()
 		</script>
-		<script type="text/javascript">
+		<script src="scripts/email.js"></script>
+		<script src="scripts/index.js" defer></script>
+		<script type="text/javascript" defer>
 			document.addEventListener('DOMContentLoaded', function () {
-				var bElements = document.querySelectorAll('.b')
-				bElements.forEach(function (element) {
-					element.addEventListener('click', function () {
-						this.classList.toggle('b')
-						this.classList.toggle('b-selected')
+				var elem = document.querySelector('.carousel-mobile')
+				const observer = new MutationObserver(() => {
+					var bElements = document.querySelectorAll('.b')
+					bElements.forEach(function (element) {
+						element.addEventListener('click', function () {
+							this.classList.toggle('b')
+							this.classList.toggle('b-selected')
+						})
+					})
+
+					var flkty = new Flickity(elem, {
+						cellalign: 'right',
+						pageDots: false,
+						groupCells: '20%',
+						selectedAttraction: 0.03,
+						friction: 0.15,
 					})
 				})
-
-				var elem = document.querySelector('.carousel-mobile')
-
-				var flkty = new Flickity(elem, {
-					// options
-					cellalign: 'right',
-					pageDots: false,
-					groupCells: '20%',
-					selectedAttraction: 0.03,
-					friction: 0.15,
-				})
+				observer.disconnect()
+				observer.observe(elem, { childList: true, subtree: true })
 			})
 		</script>
-		<script src="scripts/email.js"></script>
 	</head>
 	<body>
 		<nav class="navbar">
@@ -264,258 +267,10 @@
 				<h2 class="title">Популярные модели</h2>
 				<div class="carousel">
 					<div class="carousel__body">
-						<div class="carousel__slider">
-							<div class="carousel__slider__item">
-								<div class="item__3d-frame">
-									<div
-										class="item__3d-frame__box item__3d-frame__box--front popular-item"
-									>
-										<span class="popular-name">Iphone 15</span>
-										<img
-											src="./images/catalog/iphones/iphone15-blue.png"
-											alt="Аксессуары"
-											class="popular-image"
-										/>
-										<span class="popular-price">99990 руб.</span>
-									</div>
-									<div
-										class="item__3d-frame__box item__3d-frame__box--left"
-									></div>
-									<div
-										class="item__3d-frame__box item__3d-frame__box--right"
-									></div>
-								</div>
-							</div>
-							<div class="carousel__slider__item">
-								<div class="item__3d-frame">
-									<div
-										class="item__3d-frame__box item__3d-frame__box--front popular-item"
-									>
-										<span class="popular-name">Аксессуары</span>
-										<img
-											src="./images/categories/accessories.png"
-											alt="Аксессуары"
-											class="popular-image"
-										/>
-										<span class="popular-price">от 500 руб.</span>
-									</div>
-									<div
-										class="item__3d-frame__box item__3d-frame__box--left"
-									></div>
-									<div
-										class="item__3d-frame__box item__3d-frame__box--right"
-									></div>
-								</div>
-							</div>
-							<div class="carousel__slider__item">
-								<div class="item__3d-frame">
-									<div
-										class="item__3d-frame__box item__3d-frame__box--front popular-item"
-									>
-										<span class="popular-name">Аксессуары</span>
-										<img
-											src="./images/categories/accessories.png"
-											alt="Аксессуары"
-											class="popular-image"
-										/>
-										<span class="popular-price">от 500 руб.</span>
-									</div>
-									<div
-										class="item__3d-frame__box item__3d-frame__box--left"
-									></div>
-									<div
-										class="item__3d-frame__box item__3d-frame__box--right"
-									></div>
-								</div>
-							</div>
-							<div class="carousel__slider__item">
-								<div class="item__3d-frame">
-									<div
-										class="item__3d-frame__box item__3d-frame__box--front popular-item"
-									>
-										<span class="popular-name">Аксессуары</span>
-										<img
-											src="./images/categories/accessories.png"
-											alt="Аксессуары"
-											class="popular-image"
-										/>
-										<span class="popular-price">от 500 руб.</span>
-									</div>
-									<div
-										class="item__3d-frame__box item__3d-frame__box--left"
-									></div>
-									<div
-										class="item__3d-frame__box item__3d-frame__box--right"
-									></div>
-								</div>
-							</div>
-							<div class="carousel__slider__item">
-								<div class="item__3d-frame">
-									<div
-										class="item__3d-frame__box item__3d-frame__box--front popular-item"
-									>
-										<span class="popular-name">Iphone 15</span>
-										<img
-											src="./images/catalog/iphones/iphone15-blue.png"
-											alt="Аксессуары"
-											class="popular-image"
-										/>
-										<span class="popular-price">99990 руб.</span>
-									</div>
-									<div
-										class="item__3d-frame__box item__3d-frame__box--left"
-									></div>
-									<div
-										class="item__3d-frame__box item__3d-frame__box--right"
-									></div>
-								</div>
-							</div>
-							<div class="carousel__slider__item">
-								<div class="item__3d-frame">
-									<div
-										class="item__3d-frame__box item__3d-frame__box--front popular-item"
-									>
-										<span class="popular-name">Аксессуары</span>
-										<img
-											src="./images/categories/accessories.png"
-											alt="Аксессуары"
-											class="popular-image"
-										/>
-										<span class="popular-price">от 500 руб.</span>
-									</div>
-									<div
-										class="item__3d-frame__box item__3d-frame__box--left"
-									></div>
-									<div
-										class="item__3d-frame__box item__3d-frame__box--right"
-									></div>
-								</div>
-							</div>
-							<div class="carousel__slider__item">
-								<div class="item__3d-frame">
-									<div
-										class="item__3d-frame__box item__3d-frame__box--front popular-item"
-									>
-										<span class="popular-name">Аксессуары</span>
-										<img
-											src="./images/categories/accessories.png"
-											alt="Аксессуары"
-											class="popular-image"
-										/>
-										<span class="popular-price">от 500 руб.</span>
-									</div>
-									<div
-										class="item__3d-frame__box item__3d-frame__box--left"
-									></div>
-									<div
-										class="item__3d-frame__box item__3d-frame__box--right"
-									></div>
-								</div>
-							</div>
-							<div class="carousel__slider__item">
-								<div class="item__3d-frame">
-									<div
-										class="item__3d-frame__box item__3d-frame__box--front popular-item"
-									>
-										<span class="popular-name">Аксессуары</span>
-										<img
-											src="./images/categories/accessories.png"
-											alt="Аксессуары"
-											class="popular-image"
-										/>
-										<span class="popular-price">от 500 руб.</span>
-									</div>
-									<div
-										class="item__3d-frame__box item__3d-frame__box--left"
-									></div>
-									<div
-										class="item__3d-frame__box item__3d-frame__box--right"
-									></div>
-								</div>
-							</div>
-							<div class="carousel__slider__item">
-								<div class="item__3d-frame">
-									<div
-										class="item__3d-frame__box item__3d-frame__box--front popular-item"
-									>
-										<span class="popular-name">Аксессуары</span>
-										<img
-											src="./images/categories/accessories.png"
-											alt="Аксессуары"
-											class="popular-image"
-										/>
-										<span class="popular-price">от 500 руб.</span>
-									</div>
-									<div
-										class="item__3d-frame__box item__3d-frame__box--left"
-									></div>
-									<div
-										class="item__3d-frame__box item__3d-frame__box--right"
-									></div>
-								</div>
-							</div>
-							<div class="carousel__slider__item">
-								<div class="item__3d-frame">
-									<div
-										class="item__3d-frame__box item__3d-frame__box--front popular-item"
-									>
-										<span class="popular-name">Аксессуары</span>
-										<img
-											src="./images/categories/accessories.png"
-											alt="Аксессуары"
-											class="popular-image"
-										/>
-										<span class="popular-price">от 500 руб.</span>
-									</div>
-									<div
-										class="item__3d-frame__box item__3d-frame__box--left"
-									></div>
-									<div
-										class="item__3d-frame__box item__3d-frame__box--right"
-									></div>
-								</div>
-							</div>
-						</div>
+						<div class="carousel__slider"></div>
 					</div>
 				</div>
-				<div class="carousel-mobile">
-					<div class="carousel-mobile-cell">
-						<img src="./images/categories/accessories.png" class="p" />
-						<p class="n">Eddie Kinsella</p>
-						<p class="b">Call</p>
-						<p class="content"></p>
-					</div>
-					<div class="carousel-mobile-cell">
-						<img src="./images/categories/accessories.png" class="p" />
-						<p class="n">Harrison Benac</p>
-						<p class="b">Call</p>
-					</div>
-					<div class="carousel-mobile-cell">
-						<img src="./images/categories/accessories.png" class="p" />
-						<p class="n">Sean Kingston</p>
-						<p class="b">Call</p>
-					</div>
-					<div class="carousel-mobile-cell">
-						<img src="./images/categories/accessories.png" class="p" />
-						<p class="n">Hayden Kaupu</p>
-						<p class="b">Call</p>
-					</div>
-					<div class="carousel-mobile-cell">
-						<img src="./images/categories/accessories.png" class="p" />
-						<p class="n">Franklin Tudor</p>
-						<p class="b">Call</p>
-					</div>
-					<div class="carousel-mobile-cell">
-						<img src="./images/categories/accessories.png" class="p" />
-						<p class="n">Herbert Simpson</p>
-						<p class="b">Call</p>
-					</div>
-					<div class="carousel-mobile-cell">
-						<img src="./images/categories/accessories.png" class="p" />
-						<p class="n">Shaun Coleman</p>
-						<p class="b">Call</p>
-					</div>
-				</div>
+				<div class="carousel-mobile"></div>
 			</div>
 		</section>
 		<section class="faq section" id="faq">
@@ -720,9 +475,8 @@
 			</div>
 		</footer>
 		<script src="scripts/carousel.js"></script>
-		<script src="scripts/slider.js"></script>
 		<script src="scripts/faq.js"></script>
 		<script src="scripts/burger.js"></script>
-		<script src="scripts/index.js"></script>
+		<script src="scripts/slider.js" defer></script>
 	</body>
 </html>

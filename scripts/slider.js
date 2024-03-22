@@ -1,11 +1,10 @@
 (function () {
   "use strict";
 
+  console.log('slider...')
   var carousel = document.getElementsByClassName('carousel')[0],
     slider = carousel.getElementsByClassName('carousel__slider')[0],
     items = carousel.getElementsByClassName('carousel__slider__item')
-  // prevBtn = carousel.getElementsByClassName('carousel__prev')[0],
-  // nextBtn = carousel.getElementsByClassName('carousel__next')[0];
 
   var width, height, totalWidth, margin = 20,
     currIndex = 0,
@@ -15,20 +14,14 @@
     resize();
     move(Math.floor(items.length / 2));
     bindEvents();
-
     timer();
   }
 
   function resize() {
-    // width = Math.max(1200 * .25, 275),
-    width = 320
+    width = 320 // > 800px
     height = 570 * .5,
       totalWidth = width * items.length;
 
-
-    // width = 250;
-    // totalWidth = width * items.length;
-    // height = 300
 
     slider.style.width = totalWidth + "px";
 
@@ -67,24 +60,16 @@
     }, intervalTime);
   }
 
-  // function prev() {
-  //   move(--currIndex);
-  //   timer();
-  // }
-
-  // function next() {
-  //   move(++currIndex);
-  //   timer();
-  // }
-
-
   function bindEvents() {
     window.onresize = resize;
-    // prevBtn.addEventListener('click', () => { prev(); });
-    // nextBtn.addEventListener('click', () => { next(); });
   }
 
 
-  init();
 
+  const observer = new MutationObserver(() => {
+    init();
+  })
+  observer.disconnect()
+
+  observer.observe(carousel, { childList: true, subtree: true })
 })();
