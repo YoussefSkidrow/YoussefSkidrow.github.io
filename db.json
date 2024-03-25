@@ -1,0 +1,599 @@
+{
+  "catalog": [
+    {
+      "id": "1",
+      "title": "iphones",
+      "items": [
+        {
+          "id": 1,
+          "categoryId": "1",
+          "name": "iPhone 15",
+          "img": "./images/catalog/iphones/iphone15-black.jpg",
+          "description": "iPhone 15",
+          "price": 99990,
+          "popularIndex": 9.8,
+          "color": "Черный",
+          "storage": "128 ГБ"
+        },
+        {
+          "id": 2,
+          "categoryId": "1",
+          "name": "iPhone 15 Pro",
+          "img": "./images/catalog/iphones/iphone15pro-white.jpg",
+          "description": "iPhone 15 Pro",
+          "price": 119990,
+          "popularIndex": 8.2,
+          "color": "Белый",
+          "storage": "256 ГБ"
+        },
+        {
+          "id": 3,
+          "categoryId": "1",
+          "name": "iPhone 15 Pro Max",
+          "img": "./images/catalog/iphones/iphone15promax-titan.png",
+          "description": "iPhone 15 Pro Max",
+          "price": 149990,
+          "popularIndex": 8.5,
+          "color": "Натуральный титан",
+          "storage": "256 ГБ"
+        },
+        {
+          "id": 4,
+          "categoryId": "1",
+          "name": "iPhone 14",
+          "img": "./images/catalog/iphones/iphone14-white.jpeg",
+          "description": "iPhone 14",
+          "price": 139990,
+          "popularIndex": 8,
+          "color": "Белый",
+          "storage": "256 ГБ"
+        },
+        {
+          "id": 5,
+          "categoryId": "1",
+          "name": "iPhone 14 Pro",
+          "img": "./images/catalog/iphones/iphone14pro-violet.jpeg",
+          "description": "iPhone 14 Pro",
+          "price": 159990,
+          "popularIndex": 7.4,
+          "color": "Фиолетовый",
+          "storage": "256 ГБ"
+        },
+        {
+          "id": 6,
+          "categoryId": "1",
+          "name": "iPhone 14 Pro Max",
+          "img": "./images/catalog/iphones/iphone14promax-gold.jpeg",
+          "description": "iPhone 14 Pro Max",
+          "price": 169990,
+          "popularIndex": 5.4,
+          "color": "Золотой",
+          "storage": "256 ГБ"
+        },
+        {
+          "id": 7,
+          "categoryId": "1",
+          "name": "iPhone 13",
+          "img": "./images/catalog/iphones/iphone13-blue.jpg",
+          "description": "iPhone 13",
+          "price": 85990,
+          "popularIndex": 5,
+          "color": "Синий",
+          "storage": "256 ГБ"
+        },
+        {
+          "id": 8,
+          "categoryId": "1",
+          "name": "iPhone 13",
+          "img": "./images/catalog/iphones/iphone13-black.jpg",
+          "description": "iPhone 13",
+          "price": 85990,
+          "popularIndex": 5,
+          "color": "Черный",
+          "storage": "256 ГБ"
+        },
+        {
+          "id": 9,
+          "categoryId": "1",
+          "name": "iPhone 13",
+          "img": "./images/catalog/iphones/iphone13-pink.jpg",
+          "description": "iPhone 13",
+          "price": 69990,
+          "popularIndex": 7,
+          "color": "Розовый",
+          "storage": "128 ГБ"
+        },
+        {
+          "id": 10,
+          "categoryId": "1",
+          "name": "iPhone 12",
+          "img": "./images/catalog/iphones/iphone12-black.jpg",
+          "description": "iPhone 12",
+          "price": 57990,
+          "popularIndex": 7,
+          "color": "Черный",
+          "storage": "64 ГБ"
+        },
+        {
+          "id": 11,
+          "categoryId": "1",
+          "name": "iPhone 12",
+          "img": "./images/catalog/iphones/iphone12-white.jpg",
+          "description": "iPhone 12 ",
+          "price": 64990,
+          "popularIndex": 4,
+          "color": "Белый",
+          "storage": "128 ГБ"
+        },
+        {
+          "id": 12,
+          "categoryId": "1",
+          "name": "iPhone 12",
+          "img": "./images/catalog/iphones/iphone12-black.jpg",
+          "description": "iPhone 12 ",
+          "price": 64990,
+          "popularIndex": 9.8,
+          "color": "Черный",
+          "storage": "128 ГБ"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "ipads",
+      "items": [
+        {
+          "id": 1,
+          "categoryId": "2",
+          "name": "Apple iPad Pro (2022) 11",
+          "img": "./images/catalog/ipads/ipadpro2022-gray.jpg",
+          "description": "Apple iPad Pro (2022) 11",
+          "price": 119990,
+          "popularIndex": 5.8,
+          "color": "Серый космос",
+          "storage": "256 ГБ"
+        },
+        {
+          "id": 2,
+          "categoryId": "2",
+          "name": "Apple iPad Pro (2022) 11",
+          "img": "./images/catalog/ipads/ipadpro2022-silver.jpg",
+          "description": "Apple iPad Pro (2022) 11",
+          "price": 105990,
+          "popularIndex": 6.4,
+          "color": "Серебристый",
+          "storage": "128 ГБ"
+        },
+        {
+          "id": 3,
+          "categoryId": "2",
+          "name": "Apple iPad 10,9",
+          "img": "./images/catalog/ipads/ipad2022109-silver.jpg",
+          "description": "",
+          "price": 51990,
+          "popularIndex": 8.85,
+          "color": "Серебристый",
+          "storage": "64 ГБ"
+        },
+        {
+          "id": 4,
+          "categoryId": "2",
+          "name": "Apple iPad mini (2021)",
+          "img": "./images/catalog/ipads/ipadmini2021-gray.jpeg",
+          "description": "",
+          "price": 75990,
+          "popularIndex": 5.8,
+          "color": "Серый космос",
+          "storage": "256 ГБ"
+        },
+        {
+          "id": 5,
+          "categoryId": "2",
+          "name": "Apple iPad 10,9 (2022)",
+          "img": "./images/catalog/ipads/ipad2022109-yellow.jpg",
+          "description": "",
+          "price": 69990,
+          "popularIndex": 6.5,
+          "color": "Желтый",
+          "storage": "256 ГБ"
+        },
+        {
+          "id": 6,
+          "categoryId": "2",
+          "name": "Apple iPad Air (2022) 10,9",
+          "img": "./images/catalog/ipads/ipadair1092022-star.jpg",
+          "description": "",
+          "price": 85990,
+          "popularIndex": 7.8,
+          "color": "Сияющая звезда",
+          "storage": "64 ГБ"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "macbooks",
+      "items": [
+        {
+          "id": 1,
+          "categoryId": "3",
+          "name": "Apple MacBook Air 15 (M3)",
+          "img": "./images/catalog/macbooks/macbookair15-silver.jpg",
+          "description": "",
+          "price": 174990,
+          "popularIndex": 6.8,
+          "color": "Серебристый",
+          "storage": "256 ГБ"
+        },
+        {
+          "id": 2,
+          "categoryId": "3",
+          "name": "Apple MacBook Air 13 (M3)",
+          "img": "./images/catalog/macbooks/macbookair13-star.jpg",
+          "description": "",
+          "price": 149990,
+          "popularIndex": 7.21,
+          "color": "Сияющая звезда",
+          "storage": "256 ГБ"
+        },
+        {
+          "id": 3,
+          "categoryId": "3",
+          "name": "Apple MacBook Air 15 (M3)",
+          "img": "./images/catalog/macbooks/macbookair15-gray.jpg",
+          "description": "",
+          "price": 219990,
+          "popularIndex": 5,
+          "color": "Серый космос",
+          "storage": "512 ГБ"
+        },
+        {
+          "id": 4,
+          "categoryId": "3",
+          "name": "Apple MacBook Pro 16 (M3 Max)",
+          "img": "./images/catalog/macbooks/macbookpro16-black.jpg",
+          "description": "",
+          "price": 429990,
+          "popularIndex": 6.55,
+          "color": "Черный космос",
+          "storage": "1000 ГБ"
+        },
+        {
+          "id": 5,
+          "categoryId": "3",
+          "name": "Apple MacBook Air 15 (M2)",
+          "img": "./images/catalog/macbooks/macbookair15-star.jpg",
+          "description": "",
+          "price": 239990,
+          "popularIndex": 6.4,
+          "color": "Сияющая звезда",
+          "storage": "1000 ГБ"
+        },
+        {
+          "id": 6,
+          "categoryId": "3",
+          "name": "Apple MacBook Air (M1, 2020)",
+          "img": "./images/catalog/macbooks/macbookairm1-gold.jpg",
+          "description": "",
+          "price": 95990,
+          "popularIndex": 8.5,
+          "color": "Золотой",
+          "storage": "256 ГБ"
+        },
+        {
+          "id": 7,
+          "categoryId": "3",
+          "name": "Apple MacBook Pro 16 (M2 Max)",
+          "img": "./images/catalog/macbooks/macbookpro16m2-gray.jpeg",
+          "description": "",
+          "price": 449990,
+          "popularIndex": 7,
+          "color": "Серый космос",
+          "storage": "1000 ГБ"
+        },
+        {
+          "id": 8,
+          "categoryId": "3",
+          "name": "Apple MacBook Pro 14 (M3 Pro)",
+          "img": "./images/catalog/macbooks/macbookprom3-black.jpg",
+          "description": "",
+          "price": 329990,
+          "popularIndex": 5.95,
+          "color": "Черный космос",
+          "storage": "1000 ГБ"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "applewatches",
+      "items": [
+        {
+          "id": 1,
+          "categoryId": "4",
+          "name": "Apple Watch Ultra 2 GPS",
+          "img": "./images/catalog/applewatches/applewatchesultra2gps-blue.jpg",
+          "description": "",
+          "price": 104990,
+          "popularIndex": 6.5,
+          "color": "Синий",
+          "storage": "49 мм"
+        },
+        {
+          "id": 2,
+          "categoryId": "4",
+          "name": "Apple Watch SE 2023",
+          "img": "./images/catalog/applewatches/applewatchesse2023-black.jpg",
+          "description": "",
+          "price": 33990,
+          "popularIndex": 9.5,
+          "color": "Черный",
+          "storage": "44 мм"
+        },
+        {
+          "id": 3,
+          "categoryId": "4",
+          "name": "Apple Watch Series 9",
+          "img": "./images/catalog/applewatches/applewatchesseries9-blue.jpg",
+          "description": "",
+          "price": 47990,
+          "popularIndex": 9,
+          "color": "Синий",
+          "storage": "41 мм"
+        },
+        {
+          "id": 4,
+          "categoryId": "4",
+          "name": "Apple Watch Series 9",
+          "img": "./images/catalog/applewatches/applewatchesseries9-black.jpg",
+          "description": "",
+          "price": 47990,
+          "popularIndex": 8.7,
+          "color": "Черный",
+          "storage": "41 мм"
+        },
+        {
+          "id": 5,
+          "categoryId": "4",
+          "name": "Apple Watch Ultra GPS",
+          "img": "./images/catalog/applewatches/applewatchesultragps-yellow.jpg",
+          "description": "",
+          "price": 85990,
+          "popularIndex": 6.2,
+          "color": "Желтый",
+          "storage": "49 мм"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "accessories",
+      "items": [
+        {
+          "id": 1,
+          "categoryId": "5",
+          "name": "Сумка Dbramante1928 Rosenborg",
+          "img": "./images/catalog/accessories/Dbramante1928-black.jpg",
+          "description": "",
+          "price": 31490,
+          "popularIndex": 6.2,
+          "color": "macbook",
+          "storage": ""
+        },
+        {
+          "id": 2,
+          "categoryId": "5",
+          "name": "Внешний SSD Netac ZX10",
+          "img": "./images/catalog/accessories/NetacZX10-black.jpg",
+          "description": "",
+          "price": 6990,
+          "popularIndex": 6.3,
+          "color": "macbook",
+          "storage": ""
+        },
+        {
+          "id": 3,
+          "categoryId": "5",
+          "name": "Сумка moonfish",
+          "img": "./images/catalog/accessories/moonfish-gray.jpg",
+          "description": "",
+          "price": 4990,
+          "popularIndex": 6.7,
+          "color": "macbook",
+          "storage": ""
+        },
+        {
+          "id": 4,
+          "categoryId": "5",
+          "name": "Накладка moonfish",
+          "img": "./images/catalog/accessories/moonfish-pink.jpg",
+          "description": "",
+          "price": 690,
+          "popularIndex": 8.2,
+          "color": "macbook",
+          "storage": ""
+        },
+        {
+          "id": 5,
+          "categoryId": "5",
+          "name": "Сумка Uniq Vienna ",
+          "img": "./images/catalog/accessories/UniqVienna-yellow.jpg",
+          "description": "",
+          "price": 3690,
+          "popularIndex": 8.5,
+          "color": "macbook",
+          "storage": ""
+        },
+        {
+          "id": 6,
+          "categoryId": "5",
+          "name": "Netac ZX, 1 ТБ",
+          "img": "./images/catalog/accessories/NetacZX-black.jpg",
+          "description": "",
+          "price": 14990,
+          "popularIndex": 6.35,
+          "color": "macbook",
+          "storage": ""
+        },
+        {
+          "id": 7,
+          "categoryId": "5",
+          "name": "EnergEA Bazic GoMag",
+          "img": "./images/catalog/accessories/EnergEABazicGoMag-blue.jpg",
+          "description": "",
+          "price": 6990,
+          "popularIndex": 7.5,
+          "color": "iphones",
+          "storage": ""
+        },
+        {
+          "id": 8,
+          "categoryId": "5",
+          "name": "moonfish Magsafe",
+          "img": "./images/catalog/accessories/moonfishMagsafe-white.jpg",
+          "description": "",
+          "price": 6990,
+          "popularIndex": 8.47,
+          "color": "iphones",
+          "storage": ""
+        },
+        {
+          "id": 9,
+          "categoryId": "5",
+          "name": "moonfish Magsafe 5000",
+          "img": "./images/catalog/accessories/moonfishMagsafe-white.jpg",
+          "description": "",
+          "price": 4990,
+          "popularIndex": 7.3,
+          "color": "iphones",
+          "storage": ""
+        },
+        {
+          "id": 10,
+          "categoryId": "5",
+          "name": "UGREEN CD137 USB-C ",
+          "img": "./images/catalog/accessories/UGREENCD137-white.jpg",
+          "description": "",
+          "price": 3990,
+          "popularIndex": 7.46,
+          "color": "iphones",
+          "storage": ""
+        },
+        {
+          "id": 11,
+          "categoryId": "5",
+          "name": "Nomad Modern Case",
+          "img": "./images/catalog/accessories/NomadModernCase-skin.jpg",
+          "description": "",
+          "price": 10990,
+          "popularIndex": 6.1,
+          "color": "iphones",
+          "storage": ""
+        },
+        {
+          "id": 12,
+          "categoryId": "5",
+          "name": "Чехол-бумажник Satechi ",
+          "img": "./images/catalog/accessories/SatechiMagnetic-orange.jpg",
+          "description": "",
+          "price": 4590,
+          "popularIndex": 6.8,
+          "color": "iphones",
+          "storage": ""
+        },
+        {
+          "id": 13,
+          "categoryId": "5",
+          "name": "Ремешок Pitaka Moon",
+          "img": "./images/catalog/accessories/PitakaMoon-blue.jpg",
+          "description": "",
+          "price": 17990,
+          "popularIndex": 7.1,
+          "color": "applewatches",
+          "storage": ""
+        },
+        {
+          "id": 15,
+          "categoryId": "5",
+          "name": "Зарядное устройство moonfish",
+          "img": "./images/catalog/accessories/wirelessmoonfish-white.jpg",
+          "description": "",
+          "price": 1790,
+          "popularIndex": 6.86,
+          "color": "applewatches",
+          "storage": ""
+        },
+        {
+          "id": 16,
+          "categoryId": "5",
+          "name": "Чехол Y24 для Apple Watch",
+          "img": "./images/catalog/accessories/Y24-orange.jpg",
+          "description": "",
+          "price": 26990,
+          "popularIndex": 7.1,
+          "color": "applewatches",
+          "storage": ""
+        },
+        {
+          "id": 17,
+          "categoryId": "5",
+          "name": "Ремешок moonfish",
+          "img": "./images/catalog/accessories/moonfish-silver.jpg",
+          "description": "",
+          "price": 5390,
+          "popularIndex": 7.4,
+          "color": "applewatches",
+          "storage": ""
+        },
+        {
+          "id": 18,
+          "categoryId": "5",
+          "name": "Чехол Y24 для Apple Watch",
+          "img": "./images/catalog/accessories/Y24-green.jpg",
+          "description": "",
+          "price": 26990,
+          "popularIndex": 7.3,
+          "color": "applewatches",
+          "storage": ""
+        },
+        {
+          "id": 19,
+          "categoryId": "5",
+          "name": "Зарядное устройство moonfish 2в1",
+          "img": "./images/catalog/accessories/moonfish2in1-white.jpg",
+          "description": "",
+          "price": 5590,
+          "popularIndex": 7,
+          "color": "applewatches",
+          "storage": ""
+        },
+        {
+          "id": 20,
+          "categoryId": "5",
+          "name": "Ремешок moonfish для Apple Watch",
+          "img": "./images/catalog/accessories/moonfish-indigo.jpg",
+          "description": "",
+          "price": 2990,
+          "popularIndex": 8.75,
+          "color": "applewatches",
+          "storage": ""
+        }
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
