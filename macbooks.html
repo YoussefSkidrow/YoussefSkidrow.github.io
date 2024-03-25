@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Iphone Store</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles/catalog.css" />
+		<link rel="icon" type="image/x-icon" href="images/icons/favic.png" />
+	</head>
+	<body>
+		<nav class="navbar">
+			<div class="navbar-container">
+				<div class="navbar-links">
+					<a class="navbar-link1" href="index.html">
+						<img src="images/icons/logo.png" alt="logo" class="navbar-logo" />
+					</a>
+					<div class="navbar-delimiter"></div>
+					<a class="navbar-link" href="index.html">Главная</a>
+					<a class="navbar-link" href="iphones.html?items=iphones">Iphones</a>
+					<a class="navbar-link" href="ipads.html?items=ipads">Ipads</a>
+					<a class="navbar-link" href="macbooks.html?items=macbooks"
+						>Macbooks</a
+					>
+					<a class="navbar-link" href="applewatches.html?items=applewatches"
+						>Apple Watches</a
+					>
+					<a class="navbar-link" href="accessories.html?items=accessories"
+						>Аксессуары</a
+					>
+				</div>
+				<div class="navbar-contacts">
+					<div class="hamburger">
+						<span class="hamburger-bar"></span>
+						<span class="hamburger-bar"></span>
+						<span class="hamburger-bar"></span>
+					</div>
+					<a class="navbar-link" href="tel:+79999999999">+7 (999) 999-99-99</a>
+					<span class="navbar-time">С 9:00 до 21:00</span>
+				</div>
+			</div>
+			<div class="navbar-mobile">
+				<a class="navbar-mobile-link" href="index.html">Главная</a>
+				<a class="navbar-mobile-link" href="iphones.html?items=iphones"
+					>Iphones</a
+				>
+				<a class="navbar-mobile-link" href="ipads.html?items=ipads">Ipads</a>
+				<a class="navbar-mobile-link" href="macbooks.html?items=macbooks"
+					>Macbooks</a
+				>
+				<a
+					class="navbar-mobile-link"
+					href="applewatches.html?items=applewatches"
+					>Apple Watches</a
+				>
+				<a class="navbar-mobile-link" href="accessories.html?items=accessories"
+					>Аксессуары</a
+				>
+			</div>
+		</nav>
+
+		<section class="section catalog">
+			<div class="container catalog-container">
+				<div class="catalog-sidebar">
+					<h2 class="catalog-mobile-btn">></h2>
+					<h2 class="catalog-title" id="content">Фильтры</h2>
+					<div class="catalog-sidebar-item">
+						<span class="catalog-sidebar-title">Цена</span>
+						<div class="catalog-sidebar-range">
+							<input
+								type="text"
+								class="catalog-sidebar-input"
+								id="min-price"
+								placeholder="0"
+							/>
+							<span>-</span>
+							<input
+								type="text"
+								class="catalog-sidebar-input"
+								id="max-price"
+								placeholder="200000"
+							/>
+						</div>
+					</div>
+					<div class="catalog-sidebar-item">
+						<span class="catalog-sidebar-title">Память</span>
+						<div class="catalog-sidebar-checkbox">
+							<div class="checkbox-wrapper">
+								<span class="checkbox">
+									<input type="checkbox" value="256" class="checkbox-storage" />
+									<svg>
+										<use xlink:href="#checkbox" class="checkbox"></use>
+									</svg>
+								</span>
+								<svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+									<symbol id="checkbox" viewBox="0 0 22 22">
+										<path
+											fill="none"
+											stroke="currentColor"
+											d="M5.5,11.3L9,14.8L20.2,3.3l0,0c-0.5-1-1.5-1.8-2.7-1.8h-13c-1.7,0-3,1.3-3,3v13c0,1.7,1.3,3,3,3h13 c1.7,0,3-1.3,3-3v-13c0-0.4-0.1-0.8-0.3-1.2"
+										/>
+									</symbol>
+								</svg>
+							</div>
+							<span class="catalog-sidebar-memory">256 гб</span>
+						</div>
+						<div class="catalog-sidebar-checkbox">
+							<div class="checkbox-wrapper">
+								<span class="checkbox">
+									<input type="checkbox" value="512" class="checkbox-storage" />
+									<svg>
+										<use xlink:href="#checkbox" class="checkbox"></use>
+									</svg>
+								</span>
+								<svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+									<symbol id="checkbox" viewBox="0 0 22 22">
+										<path
+											fill="none"
+											stroke="currentColor"
+											d="M5.5,11.3L9,14.8L20.2,3.3l0,0c-0.5-1-1.5-1.8-2.7-1.8h-13c-1.7,0-3,1.3-3,3v13c0,1.7,1.3,3,3,3h13 c1.7,0,3-1.3,3-3v-13c0-0.4-0.1-0.8-0.3-1.2"
+										/>
+									</symbol>
+								</svg>
+							</div>
+							<span class="catalog-sidebar-memory">512 гб</span>
+						</div>
+						<div class="catalog-sidebar-checkbox">
+							<div class="checkbox-wrapper">
+								<span class="checkbox">
+									<input
+										type="checkbox"
+										value="1000"
+										class="checkbox-storage"
+									/>
+									<svg>
+										<use xlink:href="#checkbox" class="checkbox"></use>
+									</svg>
+								</span>
+								<svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+									<symbol id="checkbox" viewBox="0 0 22 22">
+										<path
+											fill="none"
+											stroke="currentColor"
+											d="M5.5,11.3L9,14.8L20.2,3.3l0,0c-0.5-1-1.5-1.8-2.7-1.8h-13c-1.7,0-3,1.3-3,3v13c0,1.7,1.3,3,3,3h13 c1.7,0,3-1.3,3-3v-13c0-0.4-0.1-0.8-0.3-1.2"
+										/>
+									</symbol>
+								</svg>
+							</div>
+							<span class="catalog-sidebar-memory">1000 гб</span>
+						</div>
+					</div>
+					<div class="catalog-sidebar-item">
+						<span class="catalog-sidebar-title">Цвет</span>
+						<div class="catalog-sidebar-checkbox">
+							<div class="checkbox-wrapper">
+								<span class="checkbox">
+									<input
+										type="checkbox"
+										value="Серый космос"
+										class="checkbox-color"
+									/>
+									<svg>
+										<use xlink:href="#checkbox" class="checkbox"></use>
+									</svg>
+								</span>
+								<svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+									<symbol id="checkbox" viewBox="0 0 22 22">
+										<path
+											fill="none"
+											stroke="currentColor"
+											d="M5.5,11.3L9,14.8L20.2,3.3l0,0c-0.5-1-1.5-1.8-2.7-1.8h-13c-1.7,0-3,1.3-3,3v13c0,1.7,1.3,3,3,3h13 c1.7,0,3-1.3,3-3v-13c0-0.4-0.1-0.8-0.3-1.2"
+										/>
+									</symbol>
+								</svg>
+							</div>
+							<span class="catalog-sidebar-memory">Серый космос</span>
+						</div>
+						<div class="catalog-sidebar-checkbox">
+							<div class="checkbox-wrapper">
+								<span class="checkbox">
+									<input
+										type="checkbox"
+										value="Черный космос"
+										class="checkbox-color"
+									/>
+									<svg>
+										<use xlink:href="#checkbox" class="checkbox"></use>
+									</svg>
+								</span>
+								<svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+									<symbol id="checkbox" viewBox="0 0 22 22">
+										<path
+											fill="none"
+											stroke="currentColor"
+											d="M5.5,11.3L9,14.8L20.2,3.3l0,0c-0.5-1-1.5-1.8-2.7-1.8h-13c-1.7,0-3,1.3-3,3v13c0,1.7,1.3,3,3,3h13 c1.7,0,3-1.3,3-3v-13c0-0.4-0.1-0.8-0.3-1.2"
+										/>
+									</symbol>
+								</svg>
+							</div>
+							<span class="catalog-sidebar-memory">Черный космос</span>
+						</div>
+						<div class="catalog-sidebar-checkbox">
+							<div class="checkbox-wrapper">
+								<span class="checkbox">
+									<input
+										type="checkbox"
+										value="Золотой"
+										class="checkbox-color"
+									/>
+									<svg>
+										<use xlink:href="#checkbox" class="checkbox"></use>
+									</svg>
+								</span>
+								<svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+									<symbol id="checkbox" viewBox="0 0 22 22">
+										<path
+											fill="none"
+											stroke="currentColor"
+											d="M5.5,11.3L9,14.8L20.2,3.3l0,0c-0.5-1-1.5-1.8-2.7-1.8h-13c-1.7,0-3,1.3-3,3v13c0,1.7,1.3,3,3,3h13 c1.7,0,3-1.3,3-3v-13c0-0.4-0.1-0.8-0.3-1.2"
+										/>
+									</symbol>
+								</svg>
+							</div>
+							<span class="catalog-sidebar-memory">Золотой</span>
+						</div>
+						<div class="catalog-sidebar-checkbox">
+							<div class="checkbox-wrapper">
+								<span class="checkbox">
+									<input
+										type="checkbox"
+										value="Сияющая звезда"
+										class="checkbox-color"
+									/>
+									<svg>
+										<use xlink:href="#checkbox" class="checkbox"></use>
+									</svg>
+								</span>
+								<svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+									<symbol id="checkbox" viewBox="0 0 22 22">
+										<path
+											fill="none"
+											stroke="currentColor"
+											d="M5.5,11.3L9,14.8L20.2,3.3l0,0c-0.5-1-1.5-1.8-2.7-1.8h-13c-1.7,0-3,1.3-3,3v13c0,1.7,1.3,3,3,3h13 c1.7,0,3-1.3,3-3v-13c0-0.4-0.1-0.8-0.3-1.2"
+										/>
+									</symbol>
+								</svg>
+							</div>
+							<span class="catalog-sidebar-memory">Сияющая звезда</span>
+						</div>
+						<div class="catalog-sidebar-checkbox">
+							<div class="checkbox-wrapper">
+								<span class="checkbox">
+									<input
+										type="checkbox"
+										value="Серебристый"
+										class="checkbox-color"
+									/>
+									<svg>
+										<use xlink:href="#checkbox" class="checkbox"></use>
+									</svg>
+								</span>
+								<svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+									<symbol id="checkbox" viewBox="0 0 22 22">
+										<path
+											fill="none"
+											stroke="currentColor"
+											d="M5.5,11.3L9,14.8L20.2,3.3l0,0c-0.5-1-1.5-1.8-2.7-1.8h-13c-1.7,0-3,1.3-3,3v13c0,1.7,1.3,3,3,3h13 c1.7,0,3-1.3,3-3v-13c0-0.4-0.1-0.8-0.3-1.2"
+										/>
+									</symbol>
+								</svg>
+							</div>
+							<span class="catalog-sidebar-memory">Серебристый</span>
+						</div>
+					</div>
+					<button class="catalog-sidebar-button button-blue" id="apply">
+						Применить
+					</button>
+				</div>
+				<div class="catalog-right">
+					<div class="catalog-sort">
+						<span class="catalog-sort-title">Сортировать по:</span>
+						<div class="catalog-sort-type selected" id="popular" name="popular">
+							Популярности
+							<img
+								src="images/icons/arrow.svg"
+								alt=""
+								class="catalog-sort-arrow"
+							/>
+						</div>
+						<div class="catalog-sort-type" id="price">
+							Стоимости
+							<img
+								src="images/icons/arrow.svg"
+								alt=""
+								class="catalog-sort-arrow"
+							/>
+						</div>
+						<div class="catalog-sort-type" id="rating">
+							Рейтингу
+							<img
+								src="images/icons/arrow.svg"
+								alt=""
+								class="catalog-sort-arrow"
+							/>
+						</div>
+					</div>
+					<div class="catalog-items">
+						<div class="catalog-item">
+							<img
+								src="./images/catalog/iphones/iphone15promax-titan.png"
+								alt="фото товара"
+								class="catalog-item-img"
+							/><span class="catalog-item-name">Iphone 15 pro max 256gb</span
+							><span class="catalog-item-price">115 990</span
+							><button class="catalog-item-btn button-blue">Заказать</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer" id="footer">
+			<div class="container">
+				<div class="footer-list">
+					<div class="footer-item">
+						<span class="footer-title">О компании</span>
+						<a class="footer-link" href="index.html#aboutus">О нас</a>
+						<a class="footer-link" href="index.html#recall">Контакты</a>
+						<a class="footer-link" href="index.html#reviews">Отзывы</a>
+					</div>
+					<div class="footer-item">
+						<span class="footer-title">Каталог</span>
+						<a class="footer-link" href="iphones.html?items=iphones">Iphone</a>
+						<a class="footer-link" href="macbooks.html?items=macbooks">Mac</a>
+						<a class="footer-link" href="ipads.html?items=ipads">Ipad</a>
+						<a class="footer-link" href="applewatches.html?items=applewatches"
+							>Watch</a
+						>
+						<a class="footer-link" href="accessories.html?items=accessories"
+							>Аксессуары</a
+						>
+					</div>
+					<div class="footer-item">
+						<span class="footer-title">Помощь</span>
+						<a class="footer-link" href="repair.html">Ремонт</a>
+						<a class="footer-link" href="warranty.html">Гарантия</a>
+						<a class="footer-link" href="index.html#faq">Частые вопросы</a>
+					</div>
+				</div>
+				<div class="footer-delimiter"></div>
+				<div class="footer-bottom">
+					<span class="footer-rights">© AppleStore:, 2024</span>
+					<div class="footer-contacts">
+						<a class="footer-link" href="tel:+79999999999"
+							>+7 (999) 999-99-99</a
+						>
+						<span class="footer-time">С 9:00 до 21:00, без выходных</span>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="scripts/products.js"></script>
+		<script src="scripts/burger.js"></script>
+	</body>
+</html>
