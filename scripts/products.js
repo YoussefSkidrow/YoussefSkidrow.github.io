@@ -8,6 +8,38 @@ const categoryNames = {
   'accessories': '5'
 }
 
+
+function renderFilters(products) {
+  const filters = document.querySelector('.catalog-sidebar');
+  filters.innerHTML = '';
+  filters.innerHTML += `
+          <h2 class="catalog-title" id="content">Фильтры</h2>
+					<div class="catalog-sidebar-item">
+						<span class="catalog-sidebar-title">Цена</span>
+						<div class="catalog-sidebar-range">
+							<input
+								type="text"
+								class="catalog-sidebar-input"
+								id="min-price"
+								placeholder="0"
+							/>
+							<span>-</span>
+							<input
+								type="text"
+								class="catalog-sidebar-input"
+								id="max-price"
+								placeholder="200000"
+							/>
+						</div>
+					</div>
+  `
+
+
+
+
+}
+
+
 async function getProducts(categoryId, params) {
   let url = `${BASE_URL}/catalog/${categoryNames[categoryId]}`;
   const response = await fetch(url);
@@ -46,6 +78,7 @@ async function renderProducts(products) {
         <span class="catalog-item-price">${product.price}</span>
         <button class="catalog-item-btn button-blue">Заказать</button>
       </div>
+
     `
   })
   const queryString = window.location.search;
@@ -110,7 +143,6 @@ async function submitForm(event) {
 
   const products = await getProducts(categoryName, filters);
   return products
-
 }
 
 
@@ -138,6 +170,8 @@ window.onload = async function () {
   sort('popular', 'popular', 'popularIndex');
   sort('price', 'price', 'price');
   sort('rating', 'rating', 'ratingIndex');
+
+  document.querySelector('.catalog-mobile-btn').addEventListener('click', openFilters)
 }
 
 async function sort(selector, sort, sortName) {
@@ -175,4 +209,9 @@ async function sort(selector, sort, sortName) {
 const botID = 'sdfsrgewsgesbot';
 function buy(categoryId, productId) {
   window.open('https://t.me/' + botID + '?start=' + categoryId + '-' + productId, '_blank');
+}
+
+function openFilters() {
+  const filters = document.querySelector('.catalog-sidebar');
+  filters.classList.toggle('active');
 }
