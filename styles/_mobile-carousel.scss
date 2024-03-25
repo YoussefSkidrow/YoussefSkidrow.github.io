@@ -40,7 +40,7 @@
 	float: right;
 	max-width: 251px;
 	width: 100%;
-	height: 275px;
+	height: 305px;
 	border-radius: 15px;
 	counter-increment: carousel-mobile-cell;
 	transition: all 0.3s ease;
@@ -59,7 +59,9 @@
 /* name */
 .carousel-mobile-cell .n {
 	font-size: 18px;
-	margin-top: 15px;
+	margin-top: 18px;
+	height: 18px;
+	overflow: hidden;
 	text-align: center;
 	color: black;
 	counter-increment: carousel-mobile-cell;
@@ -67,18 +69,7 @@
 
 /* button */
 .carousel-mobile-cell .b {
-	// cursor: pointer;
-
-	// width: 180px;
-	// padding: 1px;
-	// background: green;
-	// border: 1px solid green;
-	// border-radius: 15px;
-	// font-size: 15px;
-	// color: white;
-	// text-align: center;
 	counter-increment: carousel-mobile-cell;
-	// transition: all 0.3s ease;
 	margin: auto;
 	margin-top: 12px;
 	width: 150px;
@@ -110,9 +101,10 @@
 .carousel-mobile-cell .p {
 	display: block;
 	margin: 0 auto;
+	margin-top: 3px;
 	border-radius: 15px;
 	width: 185px;
-	height: 180px;
+	height: 210px;
 	counter-increment: carousel-mobile-cell;
 }
 

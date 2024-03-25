@@ -326,6 +326,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .footer {
+  position: relative;
+  z-index: 11;
   width: 100vw;
   padding: 35px 0;
   background-color: #000000;
@@ -504,7 +506,7 @@ body::-webkit-scrollbar-thumb {
 .catalog-container {
   display: grid;
   grid-template-columns: 250px 1fr;
-  height: 100%;
+  min-height: 100vh;
 }
 .catalog-sidebar {
   border-radius: 12px;
@@ -625,6 +627,8 @@ body::-webkit-scrollbar-thumb {
 .catalog-item-img {
   width: 150px;
   height: 180px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .catalog-item-name {
   font-size: 18px;
@@ -639,4 +643,52 @@ body::-webkit-scrollbar-thumb {
 }
 .catalog-item-price::after {
   content: " ₽";
+}
+.catalog-mobile-btn {
+  display: none;
+}
+@media screen and (max-width: 991px) {
+  .catalog-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .catalog-container {
+    padding-left: 10px;
+  }
+}
+@media screen and (max-width: 766px) {
+  .catalog-container {
+    grid-template-columns: 1fr;
+  }
+  .catalog-sidebar {
+    background-color: #dfdfdf;
+    position: fixed;
+    z-index: 10;
+    padding: 10px 30px;
+    left: -220px;
+    transition: all 0.3s;
+  }
+  .catalog-sidebar.active {
+    left: 0;
+  }
+  .catalog-sidebar.active .catalog-mobile-btn {
+    transform: rotate(180deg);
+  }
+  .catalog-mobile-btn {
+    transition: all 0.3s;
+    display: block;
+    font-size: 35px;
+    font-weight: 900;
+    position: absolute;
+    top: -7px;
+    right: 7px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .catalog-items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .catalog-sort {
+    margin-left: 10px;
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=catalog.css.map */
