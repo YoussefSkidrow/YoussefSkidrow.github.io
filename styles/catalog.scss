@@ -36,7 +36,7 @@
 	&-container {
 		display: grid;
 		grid-template-columns: 250px 1fr;
-		height: 100%;
+		min-height: 100vh;
 	}
 
 	&-sidebar {
@@ -177,6 +177,7 @@
 		&-img {
 			width: 150px;
 			height: 180px;
+			object-fit: contain;
 		}
 
 		&-name {
@@ -193,6 +194,63 @@
 			font-size: 20px;
 			font-weight: 500;
 			text-align: center;
+		}
+	}
+
+	&-mobile-btn {
+		display: none;
+	}
+
+	@media screen and (max-width: 991px) {
+		&-items {
+			grid-template-columns: repeat(2, 1fr);
+		}
+		&-container {
+			padding-left: 10px;
+		}
+	}
+
+	@media screen and (max-width: 766px) {
+		&-container {
+			grid-template-columns: 1fr;
+		}
+
+		&-sidebar {
+			background-color: #dfdfdf;
+			position: fixed;
+			z-index: 10;
+			padding: 10px 30px;
+			left: -220px;
+			transition: all 0.3s;
+
+			&.active {
+				left: 0;
+			}
+
+			&.active {
+				.catalog-mobile-btn {
+					transform: rotate(180deg);
+				}
+			}
+		}
+
+		&-mobile-btn {
+			transition: all 0.3s;
+			display: block;
+			font-size: 35px;
+			font-weight: 900;
+			position: absolute;
+			top: -7px;
+			right: 7px;
+		}
+	}
+	@media screen and (max-width: 575px) {
+		&-items {
+			grid-template-columns: repeat(1, 1fr);
+		}
+		&-sort {
+			margin-left: 10px;
+			flex-direction: column;
 		}
 	}
 }
