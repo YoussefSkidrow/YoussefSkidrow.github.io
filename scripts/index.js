@@ -1,4 +1,5 @@
-const BASE_URL = 'http://localhost:3000';
+// const BASE_URL = 'http://localhost:3000';
+const BASE_URL = 'https://iphonestorerost.onrender.com/api';
 
 console.log('index...')
 
@@ -100,7 +101,7 @@ function addListeners() {
 }
 
 
-const botID = 'sdfsrgewsgesbot';
+const botID = 'stornnnn';
 function buy(categoryId, productId) {
   window.open('https://t.me/' + botID + '?start=' + categoryId + '-' + productId, '_blank');
 }

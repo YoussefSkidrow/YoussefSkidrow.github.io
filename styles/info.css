@@ -397,6 +397,33 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-.section-rules {
-  height: 100vh;
-}/*# sourceMappingURL=delivery.css.map */
+section {
+  min-height: 90vh;
+}
+
+.container {
+  padding: 40px 10px;
+}
+
+.title {
+  font-size: 28px;
+}
+
+.subtitle {
+  margin-top: 25px;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.text {
+  margin-top: 8px;
+  font-size: 19px;
+  line-height: 22px;
+}
+
+.bold {
+  display: inline-block;
+  font-size: 21px;
+  margin-top: 25px;
+  line-height: 26px;
+}/*# sourceMappingURL=info.css.map */
